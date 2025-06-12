@@ -6,7 +6,6 @@ import urllib.parse
 import ipaddress
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
-from sklearn.datasets import load_iris
 
 # read in dataset to train ai model
 
