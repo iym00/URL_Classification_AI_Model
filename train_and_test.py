@@ -158,7 +158,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42  # we are using 20% of the dataset to test the model and 80% to train it.
 )
 
-clf = KNN(k=5)
+KNN_Object = KNN(k=5)
 
 print("Training dataset features columns:")
 
@@ -176,7 +176,7 @@ print(y_train)
 
 print("\n")
 
-clf.fit(X_train, y_train)
+KNN_Object.fit(X_train, y_train)
 
 # Check the models accuracy in determining whether an input url is malicious or not
 
@@ -196,7 +196,7 @@ print(y_test)
 
 print("\n")
 
-ai_model_answers = clf.determine(X_test)
+ai_model_answers = KNN_Object.determine(X_test)
 
 print("Model proposed answer:")
 
